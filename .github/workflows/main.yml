@@ -21,4 +21,4 @@ jobs:
 
       - name: Run django test
         run: |
-          python gihubactions/manage.py test action.tests
+          python githubactions/manage.py test action.tests
