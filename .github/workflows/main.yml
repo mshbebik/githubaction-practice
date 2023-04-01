@@ -3,7 +3,7 @@ name: Start Django App
 on: [push, pull_request]
 
 jobs:
-  test:
+  Ultimatetest:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +19,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run django test
+      - name: Run django unittest
         run: |
           python githubactions/manage.py test actions.tests
